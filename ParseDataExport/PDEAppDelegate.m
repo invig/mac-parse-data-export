@@ -13,6 +13,13 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"parsekeys" ofType:@"plist"];
+    NSDictionary* plistDict = [[NSDictionary alloc] initWithContentsOfFile:filePath];
+    NSString *appId = [plistDict objectForKey:@"appId"];
+    NSString *clientKey = [plistDict objectForKey:@"clientKey"];
+    [Parse setApplicationId:appId
+                  clientKey:clientKey];
 }
+
 
 @end

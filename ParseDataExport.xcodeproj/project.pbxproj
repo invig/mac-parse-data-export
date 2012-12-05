@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9968757F166EEFF100A01A91 /* parsekeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9968757E166EEFF100A01A91 /* parsekeys.plist */; };
 		99A4B229166EB611008EA33A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99A4B228166EB611008EA33A /* Cocoa.framework */; };
 		99A4B233166EB611008EA33A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 99A4B231166EB611008EA33A /* InfoPlist.strings */; };
 		99A4B235166EB611008EA33A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A4B234166EB611008EA33A /* main.m */; };
@@ -17,6 +18,21 @@
 		99A4B248166EB611008EA33A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99A4B228166EB611008EA33A /* Cocoa.framework */; };
 		99A4B250166EB611008EA33A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 99A4B24E166EB611008EA33A /* InfoPlist.strings */; };
 		99A4B253166EB611008EA33A /* ParseDataExportTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A4B252166EB611008EA33A /* ParseDataExportTests.m */; };
+		99A4B25F166EB70E008EA33A /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99A4B25E166EB70E008EA33A /* Parse.framework */; };
+		99A4B265166EB99D008EA33A /* Parse.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 99A4B25E166EB70E008EA33A /* Parse.framework */; };
+		99A4B267166EB9AF008EA33A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99A4B266166EB9AF008EA33A /* CFNetwork.framework */; };
+		99A4B269166EB9B6008EA33A /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99A4B268166EB9B6008EA33A /* ApplicationServices.framework */; };
+		99A4B26B166EB9BB008EA33A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99A4B26A166EB9BA008EA33A /* CoreGraphics.framework */; };
+		99A4B26D166EB9BF008EA33A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99A4B26C166EB9BF008EA33A /* CoreLocation.framework */; };
+		99A4B26F166EB9C7008EA33A /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 99A4B26E166EB9C7008EA33A /* libsqlite3.dylib */; };
+		99A4B271166EB9CC008EA33A /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 99A4B270166EB9CC008EA33A /* libz.1.1.3.dylib */; };
+		99A4B273166EB9D3008EA33A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99A4B272166EB9D3008EA33A /* QuartzCore.framework */; };
+		99A4B275166EB9D7008EA33A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99A4B274166EB9D7008EA33A /* Security.framework */; };
+		99A4B277166EB9DD008EA33A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99A4B276166EB9DD008EA33A /* SystemConfiguration.framework */; };
+		99A4B27D166EBCBF008EA33A /* PDEContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A4B27C166EBCBF008EA33A /* PDEContainerViewController.m */; };
+		99A4B280166EBEBE008EA33A /* PDEContentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A4B27F166EBEBE008EA33A /* PDEContentTableViewController.m */; };
+		99A4B283166EBEEE008EA33A /* PDEMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A4B282166EBEEE008EA33A /* PDEMenuViewController.m */; };
+		99A4B288166ED2B5008EA33A /* PDEDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A4B287166ED2B5008EA33A /* PDEDataStore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +45,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		99A4B264166EB999008EA33A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				99A4B265166EB99D008EA33A /* Parse.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		9968757E166EEFF100A01A91 /* parsekeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = parsekeys.plist; sourceTree = "<group>"; };
 		99A4B224166EB611008EA33A /* ParseDataExport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParseDataExport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99A4B228166EB611008EA33A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		99A4B22B166EB611008EA33A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -49,6 +79,24 @@
 		99A4B24F166EB611008EA33A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		99A4B251166EB611008EA33A /* ParseDataExportTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParseDataExportTests.h; sourceTree = "<group>"; };
 		99A4B252166EB611008EA33A /* ParseDataExportTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParseDataExportTests.m; sourceTree = "<group>"; };
+		99A4B25E166EB70E008EA33A /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ParseDataExport/Parse.framework; sourceTree = "<group>"; };
+		99A4B266166EB9AF008EA33A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		99A4B268166EB9B6008EA33A /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+		99A4B26A166EB9BA008EA33A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		99A4B26C166EB9BF008EA33A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		99A4B26E166EB9C7008EA33A /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		99A4B270166EB9CC008EA33A /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		99A4B272166EB9D3008EA33A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		99A4B274166EB9D7008EA33A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		99A4B276166EB9DD008EA33A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		99A4B27B166EBCBF008EA33A /* PDEContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDEContainerViewController.h; sourceTree = "<group>"; };
+		99A4B27C166EBCBF008EA33A /* PDEContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDEContainerViewController.m; sourceTree = "<group>"; };
+		99A4B27E166EBEBE008EA33A /* PDEContentTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDEContentTableViewController.h; sourceTree = "<group>"; };
+		99A4B27F166EBEBE008EA33A /* PDEContentTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDEContentTableViewController.m; sourceTree = "<group>"; };
+		99A4B281166EBEEE008EA33A /* PDEMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDEMenuViewController.h; sourceTree = "<group>"; };
+		99A4B282166EBEEE008EA33A /* PDEMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDEMenuViewController.m; sourceTree = "<group>"; };
+		99A4B286166ED2B5008EA33A /* PDEDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDEDataStore.h; sourceTree = "<group>"; };
+		99A4B287166ED2B5008EA33A /* PDEDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDEDataStore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +104,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99A4B277166EB9DD008EA33A /* SystemConfiguration.framework in Frameworks */,
+				99A4B275166EB9D7008EA33A /* Security.framework in Frameworks */,
+				99A4B273166EB9D3008EA33A /* QuartzCore.framework in Frameworks */,
+				99A4B271166EB9CC008EA33A /* libz.1.1.3.dylib in Frameworks */,
+				99A4B26F166EB9C7008EA33A /* libsqlite3.dylib in Frameworks */,
+				99A4B26D166EB9BF008EA33A /* CoreLocation.framework in Frameworks */,
+				99A4B26B166EB9BB008EA33A /* CoreGraphics.framework in Frameworks */,
+				99A4B269166EB9B6008EA33A /* ApplicationServices.framework in Frameworks */,
+				99A4B267166EB9AF008EA33A /* CFNetwork.framework in Frameworks */,
 				99A4B229166EB611008EA33A /* Cocoa.framework in Frameworks */,
+				99A4B25F166EB70E008EA33A /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				99A4B22E166EB611008EA33A /* ParseDataExport */,
+				99A4B22F166EB611008EA33A /* Supporting Files */,
 				99A4B24B166EB611008EA33A /* ParseDataExportTests */,
 				99A4B227166EB611008EA33A /* Frameworks */,
 				99A4B225166EB611008EA33A /* Products */,
@@ -94,6 +153,16 @@
 		99A4B227166EB611008EA33A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				99A4B276166EB9DD008EA33A /* SystemConfiguration.framework */,
+				99A4B274166EB9D7008EA33A /* Security.framework */,
+				99A4B272166EB9D3008EA33A /* QuartzCore.framework */,
+				99A4B270166EB9CC008EA33A /* libz.1.1.3.dylib */,
+				99A4B26E166EB9C7008EA33A /* libsqlite3.dylib */,
+				99A4B26C166EB9BF008EA33A /* CoreLocation.framework */,
+				99A4B26A166EB9BA008EA33A /* CoreGraphics.framework */,
+				99A4B268166EB9B6008EA33A /* ApplicationServices.framework */,
+				99A4B266166EB9AF008EA33A /* CFNetwork.framework */,
+				99A4B25E166EB70E008EA33A /* Parse.framework */,
 				99A4B228166EB611008EA33A /* Cocoa.framework */,
 				99A4B246166EB611008EA33A /* SenTestingKit.framework */,
 				99A4B22A166EB611008EA33A /* Other Frameworks */,
@@ -116,8 +185,8 @@
 			children = (
 				99A4B23A166EB611008EA33A /* PDEAppDelegate.h */,
 				99A4B23B166EB611008EA33A /* PDEAppDelegate.m */,
-				99A4B23D166EB611008EA33A /* MainMenu.xib */,
-				99A4B22F166EB611008EA33A /* Supporting Files */,
+				99A4B285166ED292008EA33A /* Data */,
+				99A4B284166ED1F0008EA33A /* UI */,
 			);
 			path = ParseDataExport;
 			sourceTree = "<group>";
@@ -132,6 +201,7 @@
 				99A4B237166EB611008EA33A /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			path = ParseDataExport;
 			sourceTree = "<group>";
 		};
 		99A4B24B166EB611008EA33A /* ParseDataExportTests */ = {
@@ -153,6 +223,30 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		99A4B284166ED1F0008EA33A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				99A4B23D166EB611008EA33A /* MainMenu.xib */,
+				99A4B27B166EBCBF008EA33A /* PDEContainerViewController.h */,
+				99A4B27C166EBCBF008EA33A /* PDEContainerViewController.m */,
+				99A4B281166EBEEE008EA33A /* PDEMenuViewController.h */,
+				99A4B282166EBEEE008EA33A /* PDEMenuViewController.m */,
+				99A4B27E166EBEBE008EA33A /* PDEContentTableViewController.h */,
+				99A4B27F166EBEBE008EA33A /* PDEContentTableViewController.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		99A4B285166ED292008EA33A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				99A4B286166ED2B5008EA33A /* PDEDataStore.h */,
+				99A4B287166ED2B5008EA33A /* PDEDataStore.m */,
+				9968757E166EEFF100A01A91 /* parsekeys.plist */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -163,6 +257,7 @@
 				99A4B220166EB611008EA33A /* Sources */,
 				99A4B221166EB611008EA33A /* Frameworks */,
 				99A4B222166EB611008EA33A /* Resources */,
+				99A4B264166EB999008EA33A /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -228,6 +323,7 @@
 				99A4B233166EB611008EA33A /* InfoPlist.strings in Resources */,
 				99A4B239166EB611008EA33A /* Credits.rtf in Resources */,
 				99A4B23F166EB611008EA33A /* MainMenu.xib in Resources */,
+				9968757F166EEFF100A01A91 /* parsekeys.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +360,10 @@
 			files = (
 				99A4B235166EB611008EA33A /* main.m in Sources */,
 				99A4B23C166EB611008EA33A /* PDEAppDelegate.m in Sources */,
+				99A4B27D166EBCBF008EA33A /* PDEContainerViewController.m in Sources */,
+				99A4B280166EBEBE008EA33A /* PDEContentTableViewController.m in Sources */,
+				99A4B283166EBEEE008EA33A /* PDEMenuViewController.m in Sources */,
+				99A4B288166ED2B5008EA33A /* PDEDataStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +478,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/ParseDataExport\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ParseDataExport/ParseDataExport-Prefix.pch";
 				INFOPLIST_FILE = "ParseDataExport/ParseDataExport-Info.plist";
@@ -390,6 +495,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/ParseDataExport\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ParseDataExport/ParseDataExport-Prefix.pch";
 				INFOPLIST_FILE = "ParseDataExport/ParseDataExport-Info.plist";
@@ -447,6 +557,7 @@
 				99A4B258166EB611008EA33A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		99A4B259166EB611008EA33A /* Build configuration list for PBXNativeTarget "ParseDataExportTests" */ = {
 			isa = XCConfigurationList;
@@ -455,6 +566,7 @@
 				99A4B25B166EB611008EA33A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
