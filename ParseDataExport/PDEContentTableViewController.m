@@ -140,7 +140,28 @@
 }
 
 - (IBAction)exportCSV:(id)sender {
-    [self dataAsTabDelimitedString];
+    
+    NSSavePanel *save = [NSSavePanel savePanel];
+    [save setAllowedFileTypes:[NSArray arrayWithObject:@"csv"]];
+    [save setAllowsOtherFileTypes:NO];
+    
+    NSInteger result = [save runModal];
+    
+    if (result == NSOKButton)
+    {
+        NSString *selectedFile = [[save URL] path];
+        NSString *csv = [self dataAsTabDelimitedString];
+        
+        NSError *error = nil;
+        [csv writeToFile:selectedFile
+                        atomically:NO
+                          encoding:NSUTF8StringEncoding
+                             error:&error];
+        if (error) {
+            // This is one way to handle the error, as an example
+            [NSApp presentError:error];
+        }
+    }
 }
 
 - (BOOL)validateUserInterfaceItem:(id < NSValidatedUserInterfaceItem >)anItem
