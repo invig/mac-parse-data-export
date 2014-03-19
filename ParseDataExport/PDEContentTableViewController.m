@@ -7,6 +7,7 @@
 //
 
 #import "PDEContentTableViewController.h"
+#import <ParseOSX/Parse.h>
 
 @interface PDEContentTableViewController ()
 
@@ -37,19 +38,26 @@
 {
     [self.exportCSVButton setEnabled:NO];
   
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateClass:) name:@"PDEUpdateTable" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(updateClass:)
+                                                 name:@"PDEUpdateTable"
+                                               object:nil];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateData:) name:@"PDEDataUpdated" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(updateData:)
+                                                 name:@"PDEDataUpdated"
+                                               object:nil];
 }
 
 - (void)updateClass:(id)sender
 {
     NSString *className = [[sender userInfo] objectForKey:@"Class"];
 
-    if (!self.dataStore)
+    if (!self.dataStore) {
         self.dataStore = [[PDEDataStore alloc] initWithClassName:className];
-    else
+    } else {
         self.dataStore.className = className;
+    }
     
     NSLog(@"update class now...");
 }
@@ -72,12 +80,32 @@
 }
 
 
-- (id) tableView:(NSTableView *)aTableView objectValueForTableColumn:(NSTableColumn *)aTableColumn row:(int)rowIndex
+- (id) tableView:(NSTableView *)aTableView
+        objectValueForTableColumn:(NSTableColumn *)aTableColumn
+             row:(int)rowIndex
 {
     if (!dataStore.tableData)
         return nil;
     
-    return [[dataStore.tableData objectAtIndex:rowIndex] objectForKey:aTableColumn.identifier];
+    id object = [[dataStore.tableData objectAtIndex:rowIndex] objectForKey:aTableColumn.identifier];
+    
+    if (![object isKindOfClass:[PFRelation class]] &&
+        ![object isKindOfClass:[PFFile class]] &&
+        ![object isKindOfClass:[PFUser class]]) {
+
+        if([object isKindOfClass:[PFObject class]]) {
+            PFObject * pfobject = (PFObject *)object;
+            NSString * className = @"Colleges";
+            if ([pfobject.parseClassName isEqualToString:className]) {
+                [pfobject fetchIfNeeded];
+                return [pfobject objectForKey:@"name"];
+            }
+        } else {
+            return object;
+        }
+    }
+    
+    return @"";
 }
 
 
@@ -121,11 +149,20 @@
 
             NSString *objectString = nil;
             
-            if ([object isKindOfClass:[NSString class]])
+            if([object isKindOfClass:[PFObject class]]) {
+                PFObject * pfobject = (PFObject *)object;
+                NSString * className = @"Colleges";
+                if ([pfobject.parseClassName isEqualToString:className]) {
+                    [pfobject fetchIfNeeded];
+                    objectString = [pfobject objectForKey:@"name"];
+                }
+            }
+            else if ([object isKindOfClass:[NSString class]])
             {
                 objectString = object;
             }
-            else if ([object isNotEqualTo:[NSNull null]] && object != nil && [object respondsToSelector:@selector(stringValue)])
+            else if ([object isNotEqualTo:[NSNull null]] && object != nil &&
+                     [object respondsToSelector:@selector(stringValue)])
             {
                 objectString = [object stringValue];
             }
@@ -135,7 +172,6 @@
         [string appendString:@"\n"];
     }
     
-    NSLog(@"CSV: %@", string);
     return string;
 }
 

@@ -1,0 +1,2 @@
+PODS_PARSE_OSX_SDK_FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/Parse-OSX-SDK"
+PODS_PARSE_OSX_SDK_OTHER_LDFLAGS = -lsqlite3 -lz -framework CFNetwork -framework CoreGraphics -framework CoreLocation -framework ParseOSX -framework QuartzCore -framework Security -framework SystemConfiguration

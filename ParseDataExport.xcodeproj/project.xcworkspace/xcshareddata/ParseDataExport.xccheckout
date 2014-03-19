@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>9D34726F-DFC5-437E-8622-4AC9C22AF8C9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ParseDataExport</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>29CBF44F-EA12-4C55-AFD8-EFBAA11D457A</key>
+		<string>ssh://bitbucket.org/navitas/mac-parse-data-export.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ParseDataExport.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>29CBF44F-EA12-4C55-AFD8-EFBAA11D457A</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://bitbucket.org/navitas/mac-parse-data-export.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>29CBF44F-EA12-4C55-AFD8-EFBAA11D457A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>29CBF44F-EA12-4C55-AFD8-EFBAA11D457A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>mac-parse-data-export</string>
+		</dict>
+	</array>
+</dict>
+</plist>

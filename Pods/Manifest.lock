@@ -1,0 +1,10 @@
+PODS:
+  - Parse-OSX-SDK (1.2.18)
+
+DEPENDENCIES:
+  - Parse-OSX-SDK (~> 1.2)
+
+SPEC CHECKSUMS:
+  Parse-OSX-SDK: 6868acc3fdc5b9880de97aa0a775ca8556b46bf5
+
+COCOAPODS: 0.29.0

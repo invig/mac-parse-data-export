@@ -1,0 +1,1 @@
+../../Parse-OSX-SDK/ParseOSX.framework/Versions/1.2.18/Headers/PFRole.h

@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C7AB5932E1647D5AD668620 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 422129AED70E4D96A45C3941 /* libPods.a */; };
 		9968757F166EEFF100A01A91 /* parsekeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9968757E166EEFF100A01A91 /* parsekeys.plist */; };
+		99941D2118D9618300258DBD /* ParseOSX.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 99941D2018D9618300258DBD /* ParseOSX.framework */; };
 		99A4B229166EB611008EA33A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99A4B228166EB611008EA33A /* Cocoa.framework */; };
 		99A4B233166EB611008EA33A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 99A4B231166EB611008EA33A /* InfoPlist.strings */; };
 		99A4B235166EB611008EA33A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A4B234166EB611008EA33A /* main.m */; };
@@ -18,8 +20,6 @@
 		99A4B248166EB611008EA33A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99A4B228166EB611008EA33A /* Cocoa.framework */; };
 		99A4B250166EB611008EA33A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 99A4B24E166EB611008EA33A /* InfoPlist.strings */; };
 		99A4B253166EB611008EA33A /* ParseDataExportTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A4B252166EB611008EA33A /* ParseDataExportTests.m */; };
-		99A4B25F166EB70E008EA33A /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99A4B25E166EB70E008EA33A /* Parse.framework */; };
-		99A4B265166EB99D008EA33A /* Parse.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 99A4B25E166EB70E008EA33A /* Parse.framework */; };
 		99A4B267166EB9AF008EA33A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99A4B266166EB9AF008EA33A /* CFNetwork.framework */; };
 		99A4B269166EB9B6008EA33A /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99A4B268166EB9B6008EA33A /* ApplicationServices.framework */; };
 		99A4B26B166EB9BB008EA33A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99A4B26A166EB9BA008EA33A /* CoreGraphics.framework */; };
@@ -52,14 +52,17 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				99A4B265166EB99D008EA33A /* Parse.framework in CopyFiles */,
+				99941D2118D9618300258DBD /* ParseOSX.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3B8A0154018D429EBFD6AA33 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		422129AED70E4D96A45C3941 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9968757E166EEFF100A01A91 /* parsekeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = parsekeys.plist; sourceTree = "<group>"; };
+		99941D2018D9618300258DBD /* ParseOSX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseOSX.framework; path = "Pods/Parse-OSX-SDK/ParseOSX.framework"; sourceTree = "<group>"; };
 		99A4B224166EB611008EA33A /* ParseDataExport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParseDataExport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99A4B228166EB611008EA33A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		99A4B22B166EB611008EA33A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -79,7 +82,6 @@
 		99A4B24F166EB611008EA33A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		99A4B251166EB611008EA33A /* ParseDataExportTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParseDataExportTests.h; sourceTree = "<group>"; };
 		99A4B252166EB611008EA33A /* ParseDataExportTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParseDataExportTests.m; sourceTree = "<group>"; };
-		99A4B25E166EB70E008EA33A /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ParseDataExport/Parse.framework; sourceTree = "<group>"; };
 		99A4B266166EB9AF008EA33A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		99A4B268166EB9B6008EA33A /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
 		99A4B26A166EB9BA008EA33A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -114,7 +116,7 @@
 				99A4B269166EB9B6008EA33A /* ApplicationServices.framework in Frameworks */,
 				99A4B267166EB9AF008EA33A /* CFNetwork.framework in Frameworks */,
 				99A4B229166EB611008EA33A /* Cocoa.framework in Frameworks */,
-				99A4B25F166EB70E008EA33A /* Parse.framework in Frameworks */,
+				5C7AB5932E1647D5AD668620 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,11 +135,13 @@
 		99A4B219166EB611008EA33A = {
 			isa = PBXGroup;
 			children = (
+				99941D2018D9618300258DBD /* ParseOSX.framework */,
 				99A4B22E166EB611008EA33A /* ParseDataExport */,
 				99A4B22F166EB611008EA33A /* Supporting Files */,
 				99A4B24B166EB611008EA33A /* ParseDataExportTests */,
 				99A4B227166EB611008EA33A /* Frameworks */,
 				99A4B225166EB611008EA33A /* Products */,
+				3B8A0154018D429EBFD6AA33 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -162,10 +166,10 @@
 				99A4B26A166EB9BA008EA33A /* CoreGraphics.framework */,
 				99A4B268166EB9B6008EA33A /* ApplicationServices.framework */,
 				99A4B266166EB9AF008EA33A /* CFNetwork.framework */,
-				99A4B25E166EB70E008EA33A /* Parse.framework */,
 				99A4B228166EB611008EA33A /* Cocoa.framework */,
 				99A4B246166EB611008EA33A /* SenTestingKit.framework */,
 				99A4B22A166EB611008EA33A /* Other Frameworks */,
+				422129AED70E4D96A45C3941 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -254,10 +258,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 99A4B256166EB611008EA33A /* Build configuration list for PBXNativeTarget "ParseDataExport" */;
 			buildPhases = (
+				FB63364D7D004BF6B8364974 /* Check Pods Manifest.lock */,
 				99A4B220166EB611008EA33A /* Sources */,
 				99A4B221166EB611008EA33A /* Frameworks */,
 				99A4B222166EB611008EA33A /* Resources */,
 				99A4B264166EB999008EA33A /* CopyFiles */,
+				1450C6C2AAEB47488E2B235B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -338,6 +344,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1450C6C2AAEB47488E2B235B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		99A4B243166EB611008EA33A /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -350,6 +371,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		FB63364D7D004BF6B8364974 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -476,6 +512,7 @@
 		};
 		99A4B257166EB611008EA33A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B8A0154018D429EBFD6AA33 /* Pods.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -493,6 +530,7 @@
 		};
 		99A4B258166EB611008EA33A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B8A0154018D429EBFD6AA33 /* Pods.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (

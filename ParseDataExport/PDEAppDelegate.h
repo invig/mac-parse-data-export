@@ -7,7 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import <Parse/Parse.h>
+#import <ParseOSX/Parse.h>
 #import "PDEContainerViewController.h"
 #import "PDEMenuViewController.h"
 #import "PDEContentTableViewController.h"

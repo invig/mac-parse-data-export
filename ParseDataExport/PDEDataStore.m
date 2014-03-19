@@ -15,7 +15,7 @@
 
 + (NSArray *)classNames
 {
-    return @[@"Colleges"];
+    return @[@"Colleges", @"_User", @"Post"];
 }
 
 - (id)initWithClassName:(NSString *)className
@@ -40,7 +40,7 @@
     @synchronized(self) {
         if (className != _className)
         {
-            _className = _className;
+            _className = className;
             self.tableData = nil;
             [self fetchObjectsForClass:className skipping:0 intoMutableArray:nil];
         }
@@ -58,6 +58,8 @@
 
 - (void)fetchObjectsForClass:(NSString *)className skipping:(NSInteger)skip intoMutableArray:(NSMutableArray *)array
 {
+    NSLog(@"Fetch objects for class: %@", className);
+    
     if (array == nil)
     {
         array = [[NSMutableArray alloc] init];
@@ -65,13 +67,17 @@
     
     PFQuery *query = [PFQuery queryWithClassName:className];
     query.limit = 1000;
+
+    if ([className isEqualToString:@"_User"]) {
+        [query includeKey:@"college"];
+    }
     
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error)
         {
             [array addObjectsFromArray:objects];
             
-            if (objects.count == query.limit)
+            if (objects.count == query.limit + skip)
             {
                 [self fetchObjectsForClass:className skipping:(skip + objects.count) intoMutableArray:array];
             } else {

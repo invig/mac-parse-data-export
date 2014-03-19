@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Parse/Parse.h>
+#import <ParseOSX/Parse.h>
 
 @interface PDEDataStore : NSObject
 
