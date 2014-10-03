@@ -13,8 +13,9 @@
 
 @property (atomic, strong) NSString *className;
 @property (atomic, strong) NSArray* tableData;
+@property (atomic, strong) NSArray* keyNames;
 
 + (NSArray *)classNames;
-- (id)initWithClassName:(NSString *)className;
+- (id)initWithClassName:(NSString *)className keyNames:(NSArray *)keynames;
 
 @end
